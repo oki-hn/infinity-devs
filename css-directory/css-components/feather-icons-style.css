@@ -1,0 +1,23 @@
+/*! Reset color */
+:root {
+    --primary: #2541B2;
+    --secondary: #1768AC;
+    --dark--accent: #03256C;
+    --accent: #06BEE1;
+    --bg: #FFFFFF;
+}
+
+/** Styling data-feather icons */
+/* Mobile layout button */
+.feather-menu {
+    width: 28px;
+    height: 28px;
+    color: var(--bg);
+}
+.feather-menu:hover,
+.feather-menu:focus {
+    color: var(--accent);
+}
+.feather-menu:active {
+    color: #00abcd;
+}

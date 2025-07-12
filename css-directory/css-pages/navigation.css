@@ -1,0 +1,82 @@
+/*! Reset color */
+:root {
+    --primary: #2541B2;
+    --secondary: #1768AC;
+    --dark--accent: #03256C;
+    --accent: #06BEE1;
+    --bg: #FFFFFF;
+}
+/*! Navigation style */
+nav {
+    background-color: var(--secondary);
+    padding: 0.6rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** Styling Infinity Devs logo */
+a.nav-logo img {
+    width: 38px;
+}
+
+/** Styling Navigation links */
+ul.nav-links {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+ul.nav-links li a:link,
+ul.nav-links li a:visited {
+    color: var(--bg);
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.15s;
+}
+ul.nav-links li a:hover,
+ul.nav-links li a:focus {
+    color: #06BEE1;
+}
+ul.nav-links li a:active {
+    color: #009ab9;
+}
+
+/*? Hide button */
+.feather-menu {
+    display: none;
+}
+
+/** Media queries */
+@media (max-width: 768px) {
+    .feather-menu {
+        display: block;
+    }
+
+    /** Hide Ul navbar links */
+    ul.nav-links {
+        display: none;
+        background-color: var(--dark--accent);
+        width: 100%;
+        text-align: center;
+
+        position: absolute;
+        top: 62px;
+        left: 0;
+        z-index: 999;
+    }
+    ul.nav-links li a {
+        display: block;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--bg);
+    }
+    /*! Displays Ul navbar links when button is pressed */
+    ul.active {
+        display: block;
+    }
+}

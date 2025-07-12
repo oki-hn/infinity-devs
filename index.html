@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Oki Hendrawan" />
+    <meta name="description" content="" />
+    <!-- ? Cascading StyleSheets -->
+    <link rel="stylesheet" href="./css-directory/main.css" />
+    <link rel="stylesheet" href="./css-directory/css-pages/home.css" />
+    <link rel="stylesheet" href="./css-directory/css-pages/about-us.css" />
+    <link rel="stylesheet" href="./css-directory/css-pages/our-team.css" />
+    <link rel="stylesheet" href="./css-directory/css-pages/mentor.css" />
+    <link rel="stylesheet" href="./css-directory/css-pages/information.css" />
+    <link rel="stylesheet" href="./css-directory/css-pages/navigation.css" />
+    <!-- ? Icon link -->
+    <link rel="Icon" href="./assets/infinity-logo.png" />
+    <link
+      rel="stylesheet"
+      href="./css-directory/css-components/feather-icons-style.css"
+    />
+    <!-- ? Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Infinity Devs Project</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="#" class="nav-logo">
+        <img src="./assets/infinity-logo.png" alt="Infinity Devs logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#our-team">Our team</a></li>
+        <li><a href="#mentor">Mentor</a></li>
+        <li><a href="#information">Information</a></li>
+      </ul>
+
+      <!--! Toggle mobile layout -->
+      <div id="navbar-btn">
+        <i data-feather="menu" class="feather-menu" id="feather-menu"></i>
+      </div>
+    </nav>
+    <!-- Navigation bar end -->
+
+    <section id="home"></section>
+    <section id="about-us"></section>
+    <section id="our-team"></section>
+    <section id="mentor"></section>
+    <section id="information"></section>
+
+    <!-- ? JavaScript -->
+    <script src="./js-directory/main.js"></script>
+    <script src="./js-directory/js-components/navbar-btn.js"></script>
+    <!-- ? Feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
