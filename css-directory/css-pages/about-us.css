@@ -1,4 +1,60 @@
-section#about-us {
-    background-color: rgb(77, 77, 77);
+:root {
+    --primary: #2541B2;
+    --secondary: #1768AC;
+    --dark--accent: #03256C;
+    --accent: #06BEE1;
+    --bg: #FFFFFF;
+}
 
+/** We have About us section style using css */
+section#about-us {
+    height: auto;
+    padding: 2rem;
+    background: linear-gradient(to bottom, transparent, rgb(225, 225, 225), rgb(215, 215, 215));
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*? Styling image */
+img.about-us-img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 1rem;
+    position: relative;
+
+    border-radius: 0 40% 0 40%;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+section#about-us article {
+    max-width: 480px;
+}
+article h2 {
+    font-size: 2rem;
+    color: rgb(56, 56, 56);
+    margin-bottom: 0.5rem;
+}
+article h2 abbr {
+    background: linear-gradient(145deg, #2541B2, #1768AC, #06BEE1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+}
+article p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+
+    margin-bottom: 1rem;
+}
+
+/** Media queries */
+@media (max-width: 768px) {
+    section#about-us {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
 }

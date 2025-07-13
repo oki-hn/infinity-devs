@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Oki Hendrawan" />
     <meta name="description" content="" />
-    <!-- ? Cascading StyleSheets -->
+    <!--? Cascading StyleSheets -->
     <link rel="stylesheet" href="./css-directory/main.css" />
     <link rel="stylesheet" href="./css-directory/css-pages/home.css" />
     <link rel="stylesheet" href="./css-directory/css-pages/about-us.css" />
@@ -13,18 +13,22 @@
     <link rel="stylesheet" href="./css-directory/css-pages/mentor.css" />
     <link rel="stylesheet" href="./css-directory/css-pages/information.css" />
     <link rel="stylesheet" href="./css-directory/css-pages/navigation.css" />
-    <!-- ? Icon link -->
+    <link
+      rel="stylesheet"
+      href="./css-directory/css-components/mikro-element.css"
+    />
+    <!--? Icon link -->
     <link rel="Icon" href="./assets/infinity-logo.png" />
     <link
       rel="stylesheet"
       href="./css-directory/css-components/feather-icons-style.css"
     />
-    <!-- ? Feather icons -->
+    <!--? Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Infinity Devs Project</title>
   </head>
   <body>
-    <!-- Navigation bar -->
+    <!--* Navigation bar -->
     <nav>
       <a href="#" class="nav-logo">
         <img src="./assets/infinity-logo.png" alt="Infinity Devs logo" />
@@ -43,18 +47,126 @@
         <i data-feather="menu" class="feather-menu" id="feather-menu"></i>
       </div>
     </nav>
-    <!-- Navigation bar end -->
+    <!--* Navigation bar end -->
 
-    <section id="home"></section>
-    <section id="about-us"></section>
-    <section id="our-team"></section>
+    <section id="home">
+      <img
+        src="./assets/home-bg.png"
+        alt="Home background image"
+        class="home-img"
+      />
+      <!--* content Home page -->
+      <div class="home-left">
+        <p class="red-text">
+          <i data-feather="users" class="feather-users"></i>LIVE PROJECT
+        </p>
+        <h1>DCD Academy</h1>
+        <p>Design and Code development</p>
+
+        <div class="tools-icon">
+          <img
+            src="./assets/vscode.svg"
+            alt="VSCode icon"
+            class="tools-icon-svg"
+          />
+          <img
+            src="./assets/figma.svg"
+            alt="VSCode icon"
+            class="tools-icon-svg"
+          />
+          <img
+            src="./assets/github.svg"
+            alt="VSCode icon"
+            class="tools-icon-svg"
+          />
+          <img
+            src="./assets/git.svg"
+            alt="VSCode icon"
+            class="tools-icon-svg"
+          />
+        </div>
+        <div class="white-space-top"></div>
+      </div>
+    </section>
+    <section id="about-us">
+      <article>
+        <h2>
+          What is
+          <abbr title="Design Code and Development Academy">DCD Academy</abbr>?
+        </h2>
+        <p>
+          <abbr title="Design Code and Development Academy">DCD Academy</abbr>
+          is a learning hub for digital innovators to grow and thrive in the
+          world of technology. We offer projects-based education focused on web
+          development.
+        </p>
+        <p>
+          Here, you don&apos;t just learn theory-You apply it through hands-on
+          practice with guidance from experienced mentors. With a curriculum
+          that evolves with industry trends,
+          <abbr title="Design Code and Development Academy">DCD Academy</abbr>
+          is committed to helping you become a skilled and competitive
+          professional in today&apos;s job market.
+        </p>
+      </article>
+      <!--! Image for About us section -->
+      <img
+        src="./assets/about-us-bg.jpg"
+        alt="Computer Science"
+        class="about-us-img"
+      />
+      <!--! Image for About us section end -->
+    </section>
+    <section id="our-team">
+      <div class="box-profile">
+        <div class="img-wrapper">
+          <img src="./assets/coder-profile-1.jpg" alt="Oki Hendrawan profile" />
+        </div>
+        <h3>Oki Hendrawan</h3>
+        <p>
+          A student at Muhammadiyah 2 Senior High School in Pemalang, born on
+          October 20, 2008. I have a strong interest and it&apos;s remarkable
+          ability to transform an era - from habits and culture to the
+          convenience it offers.
+        </p>
+        <br />
+        <p>Quote: <q>Always involve Allah in every step you take.</q></p>
+      </div>
+      <div class="box-profile">
+        <div class="img-wrapper">
+          <img src="./assets/coder-profile-2.jpg" alt="Tio Ariyanto profile" />
+        </div>
+        <h3>Tio Ariyanto</h3>
+        <p>
+          A graduate of Muhammadiyah 7 Vocational High School in Randudongkal,
+          born on April 6, 2005. I enjoy learning from those with more
+          experience than me, and I&apos;m always eager to explore things I
+          haven&apos;t learned yet.
+        </p>
+        <br />
+        <p>Quote: <q>Keep striving to achieve everything you dream of.</q></p>
+      </div>
+      <div class="box-profile">
+        <div class="img-wrapper">
+          <img src="./assets/coder-profile-3.jpg" alt="Vina Ariva Rahma profile" />
+        </div>
+        <h3>Vina Ariva Rahma</h3>
+        <p>
+          A student at the Islamic of Pemalang, born on August 27, 2002.
+          I&apos;ve had a deep interest in history for as long as I can
+          remember.
+        </p>
+        <br />
+        <p>Quote: <q>Keep fighting - you can do it!.</q></p>
+      </div>
+    </section>
     <section id="mentor"></section>
     <section id="information"></section>
 
-    <!-- ? JavaScript -->
+    <!--? JavaScript -->
     <script src="./js-directory/main.js"></script>
     <script src="./js-directory/js-components/navbar-btn.js"></script>
-    <!-- ? Feather icons -->
+    <!--? Feather icons -->
     <script>
       feather.replace();
     </script>

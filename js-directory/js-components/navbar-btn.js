@@ -5,3 +5,9 @@ const navbarLinks = document.querySelector('.nav-links'); //? Navigation links i
 navbarBtn.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
+
+document.addEventListener('click', (event) => {
+    if (!navbarBtn.contains(event.target) && !navbarLinks.contains(event.target)) {
+        navbarLinks.classList.remove('active');
+    }
+})

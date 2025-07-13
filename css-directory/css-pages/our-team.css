@@ -1,3 +1,84 @@
+:root {
+    --primary: #2541B2;
+    --secondary: #1768AC;
+    --dark--accent: #03256C;
+    --accent: #06BEE1;
+    --bg: #FFFFFF;
+}
+
+/** Our team style */
 section#our-team {
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(215, 215, 215);
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*? Box profile */
+div.box-profile {
+    background-color: var(--bg);
+    width: calc(100% - 1rem);
+    max-width: 450px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+div.box-profile img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-radius: 0 0 50% 0;
+    box-shadow: 6px 6px 2px var(--primary);
+}
+div.box-profile:nth-child(2) img {
+    box-shadow: 6px 6px 2px var(--dark--accent);
+}
+div.box-profile:last-child img {
+    box-shadow: 6px 6px 2px var(--accent);
+}
+div.box-profile:first-of-type img {
+    object-position: bottom;
+}
+
+div.box-profile h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    border-left: 2px solid var(--dark--accent);
+}
+
+div.box-profile h3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #06bce145, transparent);
+}
+
+/** Media queries */
+@media (max-width: 768px) {
+    section#our-team {
+        flex-direction: column;
+    }
+    div.profile-box {
+        width: calc(100% - 1rem);
+    }
 }

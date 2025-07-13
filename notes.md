@@ -1,17 +1,14 @@
-<!-- Navigation -->
-Home, About us, Our team, Mentor, Information
-
-<!-- Header -->
+<!--! Header -->
 Img, LIVE PROJECT, DCD ACADEMY, Design and Code Development, tool images
 
-<!-- About us -->
+<!--! About us -->
 What is DCD Academy?
 
 DCD Academy is a learning hub for digital innovators to grow and thrive in the world of technology. We offer project-based education focused on web development.
 
 Here, you don't just learn theory-You apply it through hands-on practice with guidance from experienced mentors. With a curriculum that evolves with industry trends, DCD Academy is committed to helping you become a skilled and competitive professional in today's job market.
 
-<!-- Our team -->
+<!--! Our team -->
 Oki Hendrawan
 A student at Muhammadiyah 2 Senior High School in Pemalang, born on October 20, 2008. I have a strong interest in the world of technology due its rapid development and its remarkable ability to transform an era - from habits and culture to the convenience it offers.
 
