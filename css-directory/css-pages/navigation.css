@@ -71,7 +71,7 @@ ul.nav-links li a:active {
         text-align: center;
 
         position: absolute;
-        top: 62px;
+        top: 60px;
         left: 0;
         z-index: 999;
     }
@@ -79,6 +79,9 @@ ul.nav-links li a:active {
         display: block;
         padding: 0.5rem 0;
         border-bottom: 1px solid var(--bg);
+    }
+    ul.nav-links li:last-child a {
+        border: none;
     }
     /*! Displays Ul navbar links when button is pressed */
     ul.active {

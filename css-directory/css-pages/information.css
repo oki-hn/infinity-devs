@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary: #2541B2;
+    --secondary: #1768AC;
+    --dark--accent: #03256C;
+    --accent: #06BEE1;
+    --bg: #FFFFFF;
+}
+
+footer#information {
+    background-color: var(--dark--accent);
+    color: rgb(214, 214, 214);
+    padding: 3rem 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
