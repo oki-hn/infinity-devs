@@ -8,7 +8,7 @@
 }
 /*! Navigation style */
 nav {
-    background-color: var(--secondary);
+    background-color: var(--accent);
     padding: 0.6rem 2rem;
     position: fixed;
     width: 100%;
