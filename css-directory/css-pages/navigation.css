@@ -8,7 +8,7 @@
 }
 /*! Navigation style */
 nav {
-    background-color: var(--accent);
+    background-color: var(--dark--accent);
     padding: 0.6rem 2rem;
     position: fixed;
     width: 100%;
@@ -66,7 +66,7 @@ ul.nav-links li a:active {
     /** Hide Ul navbar links */
     ul.nav-links {
         display: none;
-        background-color: var(--dark--accent);
+        background-color: var(--accent);
         width: 100%;
         text-align: center;
 
